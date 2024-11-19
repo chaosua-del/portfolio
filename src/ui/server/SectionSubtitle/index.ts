@@ -1,1 +1,0 @@
-export { SectionSubtitle } from "./SectionSubtitle";
