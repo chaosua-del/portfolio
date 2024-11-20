@@ -102,7 +102,6 @@ export const otherSkills: Record<
       title: 'React native elements',
       relation: ['compassly', 'restaurant-app'],
     },
-    { title: 'React-native-maps', relation: ['compassly', 'restaurant-app'] },
     {
       title: 'React-native-reanimated',
       relation: ['compassly', 'restaurant-app'],
