@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Outlet, useSearchParams } from 'react-router-dom';
 import type { Language } from '@/lib/i18n/i18n';
 import { supportedLngs } from '@/lib/i18n/i18n';
+import { Navbar } from '@/components/navbar';
+import { ContactMe } from '@/features/home/contact-me';
 
 export default function RootLayout() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -24,5 +26,13 @@ export default function RootLayout() {
     }
   }, [i18n, redirectLang, searchParams, setSearchParams]);
 
-  return <Outlet />;
+  return (
+    <div className="max-w-[1100px] mx-auto">
+      <Navbar />
+      <div className="w-full px-8">
+        <Outlet />
+      </div>
+      <ContactMe />
+    </div>
+  );
 }

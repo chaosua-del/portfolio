@@ -1,4 +1,4 @@
-# Stake Bank Admin
+# Dmytro Yukhymenko - Portfolio
 
 ## Project structure
 
