@@ -58,7 +58,7 @@ export const Skills = ({
           Click on the skill to see related projects
         </p>
       </div>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 w-full">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] xs:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 w-full">
         {skills
           .sort((a, b) => differenceInDays(a.startDate, b.startDate))
           .map((item) => (
@@ -72,7 +72,9 @@ export const Skills = ({
                 <div className="text-sm">
                   <span>{item.title}</span>
                   <Divider variant="horizontal" className="w-full" />
-                  <span>{formatDateDifference(item.startDate)}</span>
+                  <span className="text-sm">
+                    {formatDateDifference(item.startDate)}
+                  </span>
                 </div>
               </Button>
             </div>

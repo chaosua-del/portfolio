@@ -50,7 +50,7 @@ export const OtherSkills = ({
       <p className="text-neutral-400 mb-6 text-sm">
         Click on the skill to see related projects
       </p>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4">
         {filteredTitles.map((key) => (
           <div key={key}>
             <h4 className="text-neutral-200 mb-2">{key}</h4>

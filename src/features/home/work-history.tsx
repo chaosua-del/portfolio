@@ -34,7 +34,7 @@ export const WorkHistory = () => {
             <h4 className="text-neutral-200 mb-3 text-xl">
               {key} <span>{getEmployementPeriod(workHistory[key])}</span>
             </h4>
-            <div className="pl-6 text-neutral-400">
+            <div className="pl-1 md:pl-6 text-neutral-400">
               {workHistory[key].map((project) => (
                 <Project project={project} key={project.id} />
               ))}
