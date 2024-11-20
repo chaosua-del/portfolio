@@ -132,7 +132,7 @@ export const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <ContactMe className="mt-auto mb-5" />
+            <ContactMe className="mt-auto mb-5 bg-neutral-950" />
           </div>
         </SheetContent>
       </Sheet>
