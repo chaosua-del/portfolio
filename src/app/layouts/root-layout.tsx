@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Outlet, useSearchParams } from 'react-router-dom';
+
 import type { Language } from '@/lib/i18n/i18n';
 import { supportedLngs } from '@/lib/i18n/i18n';
 import { Navbar } from '@/components/navbar';
@@ -12,6 +13,8 @@ export default function RootLayout() {
   const { i18n } = useTranslation();
 
   const redirectLang = searchParams.get('redirectLang');
+
+  const pdfRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (
@@ -27,7 +30,7 @@ export default function RootLayout() {
   }, [i18n, redirectLang, searchParams, setSearchParams]);
 
   return (
-    <div className="max-w-[1100px] mx-auto">
+    <div ref={pdfRef} className="max-w-[1100px] mx-auto">
       <Navbar />
       <div className="w-full px-8">
         <Outlet />
