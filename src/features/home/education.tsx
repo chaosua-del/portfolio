@@ -9,7 +9,7 @@ export const Education = () => {
       <div className="flex flex-col gap-4 text-neutral-300">
         <div className="flex items-center gap-3">
           <MapPin />
-          <span className="hover:underline">Waraw, Mazowieckie. Poland</span>
+          <span className="hover:underline">Warsaw, Mazowieckie. Poland</span>
         </div>
         <div className="flex items-center gap-3">
           <School />
