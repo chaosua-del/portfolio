@@ -1,9 +1,7 @@
 import { z, ZodError } from 'zod';
 
 const envSchema = z.object({
-  VITE_API_URL: z.string().url(),
-  DEEPL_KEY: z.string().optional(),
-  SUPPORT_EMAIL: z.string().optional().default('api@stake-bank.com'),
+  VITE_GOOGLE_TRACKING_ID: z.string().min(1),
 });
 
 try {
