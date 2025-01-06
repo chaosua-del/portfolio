@@ -54,7 +54,7 @@ export const Skills = ({
     <div id="skills" className="mt-10">
       <div className="mb-5">
         <h2 className="font-semibold text-2xl mb-1">Main Skills</h2>
-        <p className="text-neutral-400 text-sm">
+        <p className="text-neutral-400 text-sm no-print">
           Click on the skill to see related projects
         </p>
       </div>

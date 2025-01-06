@@ -76,11 +76,38 @@
 
   :root {
     color-scheme: dark;
+    @apply bg-background text-foreground;
   }
 
   body {
-    @apply bg-background text-foreground;
     @apply font-poppins;
     @apply dark:bg-neutral-950 dark:text-white;
+  }
+}
+
+@media print {
+  body {
+    background: #0a0a0a !important; /* Ensure full-page black background */
+    margin: 0; /* Remove default margins for full coverage */
+  }
+
+  @page {
+    margin: 0; /* Ensure no white margin is added by the browser */
+    background: #0a0a0a;
+  }
+
+  * {
+    background: transparent !important; /* Reset backgrounds for all elements */
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Content-specific styles */
+  .content {
+    background: #0a0a0a !important; /* Ensure content also matches the black background */
+  }
+
+  .no-print {
+    display: none !important; /* Hide elements not needed for printing */
   }
 }

@@ -9,6 +9,7 @@ export interface Project {
   sourceCodeLink: string | null;
   location: string;
   domain: string;
+  description?: string;
   id: string;
 }
 
@@ -25,6 +26,8 @@ export const workHistory: Record<string, Project[]> = {
         'Took Part in rearchitecture from vanilla JS to React of ERP system to collect and control flow (Parts, Orders, Contacts, Invoices, Fixtures etc) for assembling line.',
         "Made significant contributions to project's architecture and code style",
       ],
+      description:
+        'Rearchitecture from vanilla JS to React of ERP system to collect and control flow (Parts, Orders, Contacts, Invoices, Fixtures etc) for assembling line.',
       technologies: [
         'React.js',
         'TypeScript',
@@ -46,6 +49,8 @@ export const workHistory: Record<string, Project[]> = {
       endDate: '2024-06-01',
       jobTitle: 'Key FullStack Developer',
       location: 'Warsaw, Poland (Remote)',
+      description:
+        "SPA which represent an LinkedIn Automation product with it's own blog",
       achievements: [
         'Developed Next JS website',
         'Optimized website SEO',
@@ -69,6 +74,8 @@ export const workHistory: Record<string, Project[]> = {
   EPAM: [
     {
       id: 'epam-birds',
+      description:
+        'Educational platform with birds for children including blog, games and galleries and user profiles',
       projectName: 'Birds for Children App',
       startDate: '2023-11-01',
       endDate: '2024-04-01',
@@ -100,6 +107,8 @@ export const workHistory: Record<string, Project[]> = {
     },
     {
       id: 'epam-ecommerce',
+      description:
+        'Redesign of a luxury clothing brand website with Microfronend and BFF architecture.',
       projectName: 'Luxury Clothing Brand Redesign',
       startDate: '2023-04-01',
       endDate: '2023-11-01',
@@ -131,6 +140,8 @@ export const workHistory: Record<string, Project[]> = {
       domain: 'E-commerce',
     },
     {
+      description:
+        'Gathering two business applications together for better data manegement',
       id: 'epam-business-model',
       projectName: 'Business Model Integration',
       startDate: '2022-04-01',
@@ -151,6 +162,8 @@ export const workHistory: Record<string, Project[]> = {
   ],
   Techlexity: [
     {
+      description:
+        "Multirole Medical application where users with disadvantages can do exercies due to the doctor's recommendations.",
       id: 'compassly',
       projectName: 'Compassly',
       startDate: '2021-10-01',
@@ -182,6 +195,8 @@ export const workHistory: Record<string, Project[]> = {
       domain: 'Medical',
     },
     {
+      description:
+        'Restaurant booking app with feedbacks, real-time chat, user profiles and maps integration',
       id: 'restaurant-app',
       projectName: 'Restaruant Booking App',
       startDate: '2021-10-01',
@@ -220,6 +235,8 @@ export const workHistory: Record<string, Project[]> = {
       domain: 'Entertainment',
     },
     {
+      description:
+        'Local Social Network with posts, user profiles and comments',
       id: 'testigram',
       projectName: 'Testigram',
       endDate: '2021-10-01',
@@ -249,6 +266,8 @@ export const workHistory: Record<string, Project[]> = {
   ],
   'Freelance 2020': [
     {
+      description:
+        'Developed a landing website with a lot of complicated UI elements and animations',
       id: 'freelance-2020',
       projectName: 'Responsive Layout Development',
       startDate: '2020-06-01',
@@ -267,6 +286,8 @@ export const workHistory: Record<string, Project[]> = {
   ],
   'Other Projects': [
     {
+      description:
+        'Crypto currency staking app with withdrawals, charts, balance control and more',
       id: 'staking-app',
       projectName: 'Crypto Staking App',
       startDate: null,
@@ -299,6 +320,8 @@ export const workHistory: Record<string, Project[]> = {
       domain: 'Web3',
     },
     {
+      description:
+        'Multirole Medical telegram bot with shopping features, and exercises for the users',
       id: 'vidbil-bot',
       projectName: 'Telegram Bot with Admin Panel',
       startDate: null,

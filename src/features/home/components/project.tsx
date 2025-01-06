@@ -33,6 +33,7 @@ export const Project = ({
       </span>
       <div>Project: {project.projectName}</div>
       <div>Domain: {project.domain}</div>
+      <div>Description: {project.description}</div>
       {project.sourceCodeLink && (
         <div>Source Code: {project.sourceCodeLink}</div>
       )}

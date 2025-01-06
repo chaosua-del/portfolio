@@ -67,7 +67,7 @@ export const Navbar = () => {
       style={{
         top: navbarPosition,
       }}
-      className="max-w-[1100px] transition-all w-full flex items-center px-6 bg-neutral-900 text-neutral-500 rounded-b-lg top-0 h-16 sticky"
+      className="no-print max-w-[1100px] transition-all w-full flex items-center px-6 bg-neutral-900 text-neutral-500 rounded-b-lg top-0 h-16 sticky"
     >
       <div className="hidden md:flex h-full z-10 w-full mx-auto md:px-20 items-center shadow-md justify-between ">
         {links.map((link) => (

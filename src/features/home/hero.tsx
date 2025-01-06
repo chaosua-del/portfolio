@@ -22,24 +22,28 @@ export const Hero = () => {
           effectively self-manage during individual projects while also
           excelling in a collaborative team setting
         </p>
-        <Button
-          size="lg"
-          className="self-start"
-          onClick={() => {
-            const element = document.querySelector('#other-info');
-            if (element) {
-              const y =
-                element.getBoundingClientRect().top + window.scrollY - 90;
+        <div className="flex gap-2 items-center no-print">
+          <Button
+            size="lg"
+            onClick={() => {
+              const element = document.querySelector('#other-info');
+              if (element) {
+                const y =
+                  element.getBoundingClientRect().top + window.scrollY - 90;
 
-              window.scrollTo({
-                behavior: 'smooth',
-                top: y,
-              });
-            }
-          }}
-        >
-          Let&apos;s Get in Touch
-        </Button>
+                window.scrollTo({
+                  behavior: 'smooth',
+                  top: y,
+                });
+              }
+            }}
+          >
+            Let&apos;s Get in Touch
+          </Button>
+          <Button onClick={() => print()} size="lg" variant="secondary">
+            Download CV
+          </Button>
+        </div>
       </div>
       <img
         src="/me.jpg"

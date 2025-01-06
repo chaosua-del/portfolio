@@ -41,13 +41,13 @@ export const OtherSkills = ({
       <div className="flex gap-4 items-center mb-1">
         <h2 className="font-semibold text-2xl">Other Skills</h2>
         <Input
-          className="max-w-[200px]"
+          className="max-w-[200px] no-print"
           value={search}
           placeholder="Search for skills"
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
-      <p className="text-neutral-400 mb-6 text-sm">
+      <p className="text-neutral-400 mb-6 text-sm no-print">
         Click on the skill to see related projects
       </p>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4">
